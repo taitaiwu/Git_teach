@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>test</title>
+    </header>
+
+<style>
+    #news1
+    {
+        background-color: rgb(243, 243, 188);
+        margin: 40px;
+        padding: 20px;
+        font-size: large;
+    }
+
+    #news2
+    {
+        background-color: rgb(220, 243, 188);
+        margin: 40px;
+        padding: 20px;
+        font-size: large;
+    }
+
+    #news3
+    {
+        background-color: rgb(206, 240, 232);
+        margin: 40px;
+        padding: 20px;
+        font-size: large;
+    }
+
+    #ChineseName 
+    {
+        background-color: rgb(119, 219, 129);
+    }
+</style>
+
+<body>
+    <p id="news1">
+        <b>13 | March.2024</b><br>
+        食品系與資工系第一次洽談
+    </p>
+
+    <p id="news2">
+        <b>13 | March.2024</b><br>
+        食品系與資工系第一次洽談
+    </p>
+
+    <p id="news3">
+        <b>13 | March.2024</b><br>
+        食品系與資工系第一次洽談
+    </p>
+
+    <p class="#ChineseName">
+        <h2><mark style="background-color: rgb(214, 252, 252);"><b>中文名</b></mark>&nbsp;水獺&nbsp;
+            <mark style="background-color: rgb(214, 252, 252);"><b>其他別名</b></mark>&nbsp;歐亞水獺</h2>
+    </p>
+
+    <script>
+        function displayMap()
+        {
+            var myCenter = new google.maps.LatLng (24.462176791440065, 118.33315269050185);
+            var objMap = document.getElementById ("myMap");
+            var mapInfo = { center: myCenter, zoom:15};
+            var locMap = new google.map.Map (objMap, mapInfo);
+            var marker = new google.map.Marker ({ position:myCenter })
+            marker.setMap(locMap);
+        }
+    </script>
+</body>
+</html>

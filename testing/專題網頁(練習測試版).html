@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>資工食品合作專題</title>
+    </head>
+
+    <style>
+        a { text-decoration: none; }
+        img { max-width: 100%; }
+        ul.only-nav { list-style-type: none; }
+
+        .logo
+        {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+        }
+
+        .only-nav 
+        {
+            display: flex; 
+            list-style: none;
+        }
+
+        .only-nav li { margin-left: 20px; }
+        .only-nav a { color: rgb(0, 0, 0); }
+        .only-nav a:hover { color: gold; }
+        .only-nav a:active { color: chocolate; }
+
+
+        .header-and-nav
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header-warp { padding: 0.5%; }
+
+        .webcontent
+        {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .webcontent p { margin: 10px 0 40px; }
+        .webtitle { font-size: 5rem; }
+
+        .my-background
+        {
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+        }
+
+        #home
+        {
+            background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/0a/Golden_Gate_Bridge_2021.jpg");
+            background-blend-mode: hard-light;
+            min-height: 100vh;
+        }
+
+        .news-info 
+        { 
+            font-size: 50px; 
+            font-family: 微軟正黑體;
+            margin-left: 10px;
+        }
+
+        .news-grid
+        {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            margin: 0,0,100px,100px;
+            gap: 20px;
+        }
+
+        .news
+        { 
+            display: grid; 
+            grid-template-columns: 130px 450px ;
+        }
+
+        .news-content
+        {
+            display: grid; 
+            grid-template-rows: 1fr 2fr; 
+        }
+
+        .date
+        {
+            background: lightgreen;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            font-size: 2.2rem;
+            text-align: center;
+            top: 0;
+            padding-top: 10px;
+        }
+
+        .news-classify { font-size: 25px;}
+        .news-title { font-size: 50px; }
+
+        footer
+        {
+            text-align: center;
+            background-image: url(https://kinmen.travel/tours/4948/480x360_tours-image-f0awk6nz1usojr9cku8vzq.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 3px 0;
+            margin-top: 30px;
+        }
+
+        footer p
+        {
+            font-size: 1rem;
+        }
+    </style>
+
+    <body>
+        <main id="home" class="my-background">
+            <header class="header-and-nav header-warp">
+                <img class="logo" src="https://www.nqu.edu.tw/var/file/0/1000/img/5/logo.png" alt="金門大學logo">
+
+                <nav>
+                    <ul class="only-nav">
+                        <li><a href="http://127.0.0.1/wordpress/">最新消息</a></li>
+                        <li><a href="http://127.0.0.1/wordpress/?p=1">關於我們</a></li>
+                    </ul>
+                </nav>
+            </header>
+    
+            <div class="webcontent wapper">
+                <h1 class="webtitle">This is the Website's Title.</h1>
+                <p>This is the website's Subtitle.</p>
+            </div>
+        </main>
+
+        <article>
+            <h1 class="news-info">最新消息 News</h1>
+
+            <div class="news-grid">
+                <div class="news">
+                    <div class="date">2024<br>03/13</div>
+                    <div class="news-content">
+                        <div class="news-classify"><mark style="background-color: lightcyan;"><b>消息類別</b></div>
+                        <div class="news-title">消息標題....</div>
+                    </div>
+                </div>
+
+                <div class="news">
+                    <div class="date">YYYY<br>MM/DD</div>
+                    <div class="news-content">
+                        <div class="news-classify"><mark style="background-color: lightcyan;"><b>消息類別</b></div>
+                        <div class="news-title">消息標題....</div>
+                    </div>
+                </div>
+
+                <div class="news">
+                    <div class="date">YYYY<br>MM/DD</div>
+                    <div class="news-content">
+                        <div class="news-classify"><mark style="background-color: lightcyan;"><b>消息類別</b></div>
+                        <div class="news-title">消息標題....</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            <div class="footer-warpper">
+                <p>
+                    國立金門大學 National Quemoy University<br>
+                    資訊工程學系 Department of Computer Science & Information Engineering<br>
+                    食品科學系 Department of Food Science
+                </p>
+
+                <p>&reg 版權所有 &reg</p>
+            </div>
+        </footer>
+    </body>
+</html>
